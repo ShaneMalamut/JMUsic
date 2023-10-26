@@ -41,13 +41,16 @@ section {
     background: #555;
     max-width: 60vw;
     margin: 10px;
-    padding: 20px;
     border-radius: 25px 0;
     box-shadow: 0 0 20px #444 inset;
     clear: left;
+    overflow: hidden;
 }
 
 section img {
-    float: left;
-    height: 500px;
+    height: 200px;
+}
+
+section p {
+    padding: 20px;
 }
