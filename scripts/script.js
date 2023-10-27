@@ -1,0 +1,1 @@
+/* Common script for all pages */
