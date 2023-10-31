@@ -1,56 +1,97 @@
 body {
-    background: #666;
-    color: #ccc;
+    background: #567;
+    color: #bcd;
     margin: 0;
+    font-family: serif;
+}
+
+h1, h2 {
+    font-family: Calibri;
 }
 
 header {
     height: 50px;
     width: 100%;
-    background: #888;
+    background: #123;
     margin: 0;
     position: fixed;
-    box-shadow: 0 1px 10px #333;
+    box-shadow: 0 1px 10px #123;
+    font-family: Calibri;
+}
+
+header nav ul {
+    padding: 0 50px;
+}
+header nav {
+    width: 100%;
+    text-align: right;
 }
 
 header nav ul li {
     display: inline;
+    margin-left: 15px;
+}
+
+header nav ul li:first-of-type {
     float: left;
-    margin-right: 5px;
+    margin-left: 0;
 }
 
 header nav a {
-    color: #ccc;
+    color: #bcd;
     text-decoration: none;
-    background: #777;
+    background: #234;
     padding: 10px;
-    border-radius: 15px 0;
-    box-shadow: 0 0 20px #444 inset;
+    border-radius: 5px;
+    box-shadow: 0 0 20px #1237;
+    border: 2px solid #456;
 }
 
 header nav a:hover {
-    background: #333;
+    background: #456;
 }
 
 main {
-    padding-top: 50px;
     min-height: 1200px;
+    padding: 50px;
+    padding-top: 75px;
 }
 
 section {
-    background: #555;
-    max-width: 60vw;
     margin: 10px;
-    border-radius: 25px 0;
-    box-shadow: 0 0 20px #444 inset;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #345 inset;
+    background: #456;
+    width: calc(50% - 50px);
+}
+
+section.information {
     clear: left;
-    overflow: hidden;
+    float: left;
 }
 
-section img {
+section.album {
+    clear: right;
+    float: right;
+}
+
+section.album img {
     height: 200px;
+    float: right;
+    border-radius: 15px;
 }
 
-section p {
-    padding: 20px;
+section.information {
+    padding: 0 20px;
+}
+
+section.album p, section.album h2 {
+    padding: 0 20px;
+    float: left;
+}
+
+section.album img:hover {
+    box-shadow: 0 0 5px 1px #0afa;
+    border-radius: 0;
+    transform: scale(1.05);
 }
