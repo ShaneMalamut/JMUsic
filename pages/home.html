@@ -13,37 +13,47 @@
                 <li><a href="">Plastic Brain</a></li>
                 <li><a href="">Glitch Piano</a></li>
                 <li><a href="">Trebuchet</a></li>
-                <li><a href="">Upcoming?</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="information">
-            <h1>Plastic Reaper</h1>
-            <p>TEST</p>
-        </section>
-        <section class="album">
-            <a href=""><img src="../images/sotd.jpg" alt="image1"></a>
-            <h2>Sounds of the Dreamscape</h2>
-            <p>text about this section</p>
-        </section>
-        <section class="album">
-            <a href=""><img src="../images/pg.jpg" alt="image2"></a>
-            <p>text about this section</p>
-        </section>
-        <section class="album">
-            <a href=""><img src="../images/pb.jpg" alt="image3"></a>
-            <p>text about this section</p>
-        </section>
-        <section class="album">
-            <a href=""><img src="../images/gp.jpg" alt="image4"></a>
-            <p>text about this section</p>
-        </section>
-        <section class="album">
-            <a href=""><img src="../images/t.jpg" alt="image4"></a>
-            <p>text about this section</p>
-        </section>
+        <div class="flex-container">
+            <section class="album">
+                <a href=""><img src="../images/sotd.jpg" alt="image1"></a>
+                <h2>Sounds of the Dreamscape</h2>
+                <p>text about this section</p>
+                <p class="notes">August 2020 | 13 songs | 20:00 minutes</p>
+            </section>
+            <section class="album">
+                <a href=""><img src="../images/pg.jpg" alt="image2"></a>
+                <p>text about this section</p>
+            </section>
+            <section class="album">
+                <a href=""><img src="../images/pb.jpg" alt="image3"></a>
+                <p>text about this section</p>
+            </section>
+            <section class="album">
+                <a href=""><img src="../images/gp.jpg" alt="image4"></a>
+                <p>text about this section</p>
+            </section>
+            <section class="album">
+                <a href=""><img src="../images/t.jpg" alt="image4"></a>
+                <p>text about this section</p>
+            </section>
+            <section class="input">
+                <h2>Add your own album!</h2>
+                <form>
+                    <label>Album Title: </label><input class="form-control"></input><br>
+                    <label>Album Description: </label><input class="form-control"></input><br>
+                    <label>YouTube Link: </label><input class="form-control"></input><br>
+                    <button type="submit">Add Album</button>
+                </form>
+            </section>
+        </div>
     </main>
-    <!-- <script src="../scripts/script.js"></script> -->
+    <!-- <script src="../scripts/script.js"></script> 
+    TODO: on each album page: a form for submitting remixes
+    TODO: Gallery Walk remix on the SOTD page already
+    -->
 </body>
 </html>

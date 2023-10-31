@@ -17,6 +17,8 @@ header {
     position: fixed;
     box-shadow: 0 1px 10px #123;
     font-family: Calibri;
+    padding: 5px;
+    z-index: 10;
 }
 
 header nav ul {
@@ -57,32 +59,30 @@ main {
     padding-top: 75px;
 }
 
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 section {
     margin: 10px;
     border-radius: 15px;
     box-shadow: 0 0 20px #345 inset;
     background: #456;
-    width: calc(50% - 50px);
+    width: calc(50% - 20px);
+    box-sizing: border-box;
+    position: relative;
 }
 
-section.information {
-    clear: left;
+section p {
     float: left;
-}
-
-section.album {
-    clear: right;
-    float: right;
+    clear: left;
 }
 
 section.album img {
     height: 200px;
     float: right;
     border-radius: 15px;
-}
-
-section.information {
-    padding: 0 20px;
 }
 
 section.album p, section.album h2 {
@@ -94,4 +94,30 @@ section.album img:hover {
     box-shadow: 0 0 5px 1px #0afa;
     border-radius: 0;
     transform: scale(1.05);
+}
+
+section.input {
+    width: 100%;
+    padding: 20px;
+}
+
+section .notes {
+    position: absolute;
+    bottom: 0px;
+    color: #89a;
+}
+
+@media (max-width: 1000px) {
+    header {
+        height: auto;
+        position: static;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    main {
+        padding-top: 10px;
+    }
 }
