@@ -173,8 +173,21 @@ section .notes {
         position: static;
     }
 
+    header nav ul {
+        padding: 0 5px;
+    }
+
     header ul li {
         line-height: 50px;
+        font-size: 80%;
+    }
+
+    header .title-block {
+        padding: 0 5px;
+    }
+
+    header .title-block h2 {
+        font-size: 75%;
     }
 
     section {
