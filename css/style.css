@@ -10,7 +10,7 @@ h1, h2 {
 }
 
 header {
-    height: 50px;
+    height: 110px;
     width: 100%;
     background: #123;
     margin: 0;
@@ -30,7 +30,7 @@ header nav {
 
 header nav ul li {
     display: inline;
-    margin-left: 15px;
+    margin-right: 15px;
     float: left;
 }
 
@@ -48,18 +48,45 @@ header nav a:hover {
     background: #456;
 }
 
-header nav h1 {
+header nav ul li:last-of-type {
+    float: right;
     margin: 0;
+}
+
+header nav ul li:last-of-type a {
+    background: none;
+    border: none;
+}
+
+header nav ul li:last-of-type a:hover {
+    color: #fff;
+}
+
+header .title-block {
+    width: 100%;
+    padding: 10px 50px;
+}
+
+header .title-block h1, header .title-block h2 {
+    display: inline;
+}
+
+header .title-block h2 {
+    font-size: 100%;
     position: relative;
     bottom: 5px;
+}
+
+header h1 {
     padding-right: 15px;
     border-right: 2px solid #567;
+    margin-right: 15px;
 }
 
 main {
     min-height: 1200px;
     padding: 50px;
-    padding-top: 75px;
+    padding-top: 135px;
 }
 
 .flex-container {
@@ -131,6 +158,10 @@ section .notes {
     header {
         height: auto;
         position: static;
+    }
+
+    header ul li {
+        line-height: 200px;
     }
 
     section {
