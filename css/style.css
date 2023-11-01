@@ -135,7 +135,20 @@ section.album .image img {
 section.album p, section.album h2 {
     padding: 0 20px;
     float: left;
+    margin-bottom: 5px;
+    margin-top: 15px;
 }
+
+section.album h2 a {
+    text-decoration: none;
+    color: #78f;
+}
+
+section.album h2 a:hover {
+    text-decoration: underline;
+    color: #9af;
+}
+
 
 section.album img:hover {
     box-shadow: 0 0 5px 1px #0afa;
@@ -156,12 +169,12 @@ section .notes {
 
 @media (max-width: 1000px) {
     header {
-        height: auto;
+        height: 200px;
         position: static;
     }
 
     header ul li {
-        line-height: 200px;
+        line-height: 50px;
     }
 
     section {
