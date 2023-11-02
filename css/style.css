@@ -84,7 +84,6 @@ header h1 {
 }
 
 main {
-    min-height: 1200px;
     padding: 50px;
     padding-top: 135px;
 }
@@ -112,7 +111,7 @@ section .content {
     width: calc(100% - 200px);
 }
 
-section p {
+section.main-panel p {
     float: left;
     clear: left;
 }
@@ -139,12 +138,12 @@ section.album p, section.album h2 {
     margin-top: 15px;
 }
 
-section.album h2 a {
+section h2 a {
     text-decoration: none;
     color: #78f;
 }
 
-section.album h2 a:hover {
+section h2 a:hover {
     text-decoration: underline;
     color: #9af;
 }

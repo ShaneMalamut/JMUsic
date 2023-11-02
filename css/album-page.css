@@ -1,0 +1,51 @@
+.left-col, .right-col {
+    width: 50%;
+}
+
+.left-col {
+    float: left;
+}
+
+.right-col {
+    float: right;
+}
+
+section {
+    width: calc(100% - 20px);
+    margin: 10px;
+    padding: 5px 20px;
+}
+
+section.song-panel, section.remix-panel {
+    width: calc(50% - 20px);
+}
+
+hr {
+    clear: both;
+    border-color: #0008;
+}
+
+.info-panel ol {
+    width: 85%;
+}
+
+.info-panel ol li:nth-child(2n) {
+    background: #0002;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 0px #0002;
+}
+
+.info-panel ol li .song-time {
+    float: right;
+}
+
+.info-panel img {
+    width: 100%;
+}
+
+@media (max-width: 1000px) {
+    .left-col, .right-col {
+        width: 100%;
+        float: none;
+    }
+}
