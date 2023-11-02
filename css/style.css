@@ -140,12 +140,12 @@ section.album p, section.album h2 {
 
 section h2 a {
     text-decoration: none;
-    color: #78f;
+    color: #aaf;
 }
 
 section h2 a:hover {
     text-decoration: underline;
-    color: #9af;
+    color: #fff;
 }
 
 
@@ -163,7 +163,6 @@ section.input {
 section .notes {
     position: absolute;
     bottom: 0px;
-    color: #89a;
 }
 
 @media (max-width: 1000px) {
