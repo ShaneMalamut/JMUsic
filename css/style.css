@@ -1,3 +1,4 @@
+/* Styling for common elements */
 body {
     background: #567;
     color: #bcd;
@@ -5,10 +6,31 @@ body {
     font-family: "Times New Roman";
 }
 
+main {
+    padding: 50px;
+    padding-top: 135px;
+}
+
 h1, h2 {
     font-family: Calibri;
 }
 
+a {
+    text-decoration: none;
+    color: #aaf;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Header styling */
 header {
     height: 110px;
     width: 100%;
@@ -21,11 +43,34 @@ header {
     z-index: 10;
 }
 
-header nav ul {
-    padding: 0 50px;
+header .title-block {
+    width: 100%;
+    padding: 10px 50px;
 }
+
+header .title-block h1, header .title-block h2 {
+    display: inline;
+}
+
+header .title-block h1 {
+    padding-right: 15px;
+    border-right: 2px solid #567;
+    margin-right: 15px;
+}
+
+header .title-block h2 {
+    font-size: 100%;
+    position: relative;
+    bottom: 5px;
+}
+
+/* Navigation bar styling */
 header nav {
     width: 100%;
+}
+
+header nav ul {
+    padding: 0 50px;
 }
 
 header nav ul li {
@@ -62,37 +107,7 @@ header nav ul li:last-of-type a:hover {
     color: #fff;
 }
 
-header .title-block {
-    width: 100%;
-    padding: 10px 50px;
-}
-
-header .title-block h1, header .title-block h2 {
-    display: inline;
-}
-
-header .title-block h2 {
-    font-size: 100%;
-    position: relative;
-    bottom: 5px;
-}
-
-header h1 {
-    padding-right: 15px;
-    border-right: 2px solid #567;
-    margin-right: 15px;
-}
-
-main {
-    padding: 50px;
-    padding-top: 135px;
-}
-
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
+/* content section styling */
 section {
     margin: 10px;
     border-radius: 15px;
@@ -138,17 +153,6 @@ section.album p, section.album h2 {
     margin-top: 15px;
 }
 
-a {
-    text-decoration: none;
-    color: #aaf;
-}
-
-a:hover {
-    text-decoration: underline;
-    color: #fff;
-}
-
-
 section.album img:hover {
     box-shadow: 0 0 5px 1px #0afa;
     border-radius: 0;
@@ -165,7 +169,12 @@ section .notes {
     bottom: 0px;
 }
 
+/* Mobile accessibility */
 @media (max-width: 1000px) {
+    main {
+        padding-top: 10px;
+    }
+    
     header {
         height: 200px;
         position: static;
@@ -190,9 +199,5 @@ section .notes {
 
     section {
         width: 100%;
-    }
-
-    main {
-        padding-top: 10px;
     }
 }
