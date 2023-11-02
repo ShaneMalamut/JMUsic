@@ -138,12 +138,12 @@ section.album p, section.album h2 {
     margin-top: 15px;
 }
 
-section h2 a {
+a {
     text-decoration: none;
     color: #aaf;
 }
 
-section h2 a:hover {
+a:hover {
     text-decoration: underline;
     color: #fff;
 }
